@@ -1,4 +1,4 @@
-package com.example.persistence.repository.impl;
+package com.example.task_management_app.persistence.repository.impl;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,8 +6,8 @@ import java.util.Optional;
 
 import org.springframework.stereotype.Component;
 
-import com.example.persistence.model.Project;
-import com.example.persistence.repository.IProjectRepository;
+import com.example.task_management_app.persistence.model.Project;
+import com.example.task_management_app.persistence.repository.IProjectRepository;
 
 @Component
 public class ProjectRepositoryImpl implements IProjectRepository {

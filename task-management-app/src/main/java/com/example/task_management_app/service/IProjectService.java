@@ -1,8 +1,8 @@
-package com.example.service;
+package com.example.task_management_app.service;
 
 import java.util.Optional;
 
-import com.example.persistence.model.Project;
+import com.example.task_management_app.persistence.model.Project;
 
 public interface IProjectService {
 

@@ -1,8 +1,8 @@
-package com.example.persistence.repository;
+package com.example.task_management_app.persistence.repository;
 
 import java.util.Optional;
 
-import com.example.persistence.model.Project;
+import com.example.task_management_app.persistence.model.Project;
 
 public interface IProjectRepository {
 
