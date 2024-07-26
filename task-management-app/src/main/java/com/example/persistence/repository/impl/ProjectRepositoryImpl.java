@@ -4,12 +4,19 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.stereotype.Component;
+
 import com.example.persistence.model.Project;
 import com.example.persistence.repository.IProjectRepository;
 
+@Component
 public class ProjectRepositoryImpl implements IProjectRepository {
 
-    List<Project> projects = new ArrayList<>();
+    private List<Project> projects = new ArrayList<>();
+
+    public ProjectRepositoryImpl() {
+        super();
+    }
 
     @Override
     public Optional<Project> findById(Long id) {
@@ -29,7 +36,7 @@ public class ProjectRepositoryImpl implements IProjectRepository {
             Project newProject = new Project(project);
             projects.add(newProject);
         }
-        return null;
+        return project;
     }
 
 }

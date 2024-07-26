@@ -40,6 +40,11 @@ public class Project {
         return dateCreated;
     }
 
+    @Override
+    public String toString() {
+        return "Project [id=" + id + ", name=" + name + ", dateCreated=" + dateCreated + "]";
+    }
+
     public void setDateCreated(LocalDate dateCreated) {
         this.dateCreated = dateCreated;
     }
