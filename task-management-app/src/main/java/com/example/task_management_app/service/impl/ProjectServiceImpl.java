@@ -3,11 +3,13 @@ package com.example.task_management_app.service.impl;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.example.task_management_app.persistence.model.Project;
 import com.example.task_management_app.persistence.repository.IProjectRepository;
 import com.example.task_management_app.service.IProjectService;
 
+@Service
 public class ProjectServiceImpl implements IProjectService {
 
     @Autowired
